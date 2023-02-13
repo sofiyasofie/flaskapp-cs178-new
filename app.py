@@ -1,7 +1,6 @@
 # Using this tutorial: https://dev.to/nditah/develop-a-simple-python-flask-todo-app-in-1-minute-2mjm
 
 # Partner (for 2/13/23 helping w debugging in class): Sam Osa-Agbontaen
-# Help with debugging in this file from Felix Perez Diener
 
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
@@ -9,6 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 #https://flask.palletsprojects.com/en/2.2.x/appcontext/
+# Help with debugging in the following function from a TF, Felix Perez Diener
 with app.app_context():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
